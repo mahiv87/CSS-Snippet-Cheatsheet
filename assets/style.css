@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Assistant&display=swap");
+
+:root {
+  --dark: #f72585;
+  --light: #4cc9f0;
+  --descr: #dddddd;
+}
+
+* {
+  background-color: #212121;
+  color: var(--dark);
+}
+
+header h1 {
+  text-align: center;
+  font-family: "Poiret One", cursive;
+}
+
+header p {
+  font-family: "Assistant", sans-serif;
+  color: var(--descr);
+  text-align: center;
+  padding: 0 5rem;
+  margin-bottom: 3rem;
+}
+
+/* max-width on container to keep */
+/* from stretching across entire page */ 
+.container {
+  max-width: 1920px;
+  margin-inline: auto;
+}
+
+/* CSS Grid */
+.cssGrid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 1fr;
+  gap: 3rem .5rem;
+}
+
+.card {
+  border: 1px dashed white;
+  padding: 1rem;
+  margin-left: .75rem;
+  margin-right: 1rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.cardTitle {
+  position: relative;
+  margin-top: -40px;
+  padding: 0.25rem;
+  border: 2px solid white;
+  border-radius: 0.5rem;
+  font-family: "Poiret One", cursive;
+  transition: all 0.5s ease-in-out;
+}
+
+.cardDescription {
+  font-family: "Assistant", sans-serif;
+  color: var(--descr);
+  margin-top: 1rem;
+}
+
+/* Flex can be used with CSS Grid */
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  min-height: 100%;
+}
+
+.cardCode {
+  flex: 1 0 100%;
+  background-image: linear-gradient(#f72585 0%, #4cc9f0 100%);
+  border-radius: 0.5rem;
+  color: white;
+  padding: 1rem;
+
+  /* Selects all code for easy copy & paste */
+  -moz-user-select: all;
+  -webkit-user-select: all;
+  user-select: all;
+}
+
+/* Box shadow transition */
+.card:hover,
+.card:hover .cardTitle {
+  box-shadow: inset 0px 0px 0.75rem #4cc9f0, 0px 0px 0.75rem #f72585;
+}
+
+footer {
+  display: block;
+  font-family: "Poiret One", cursive;
+  text-align: center;
+  padding: 20px;
+}
+
+#heart {
+  color: var(--light);
+}
+
+/* For viewing on desktops and laptops */
+@media screen and (max-width: 991px) {
+  .cssGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 1fr;
+    gap: 3rem .5rem;
+    
+  }
+}
+
+/* For viewing on tablets and mobiles */
+@media screen and (max-width: 767px) {
+  .cssGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 3rem .5rem;
+    
+  }
+}
