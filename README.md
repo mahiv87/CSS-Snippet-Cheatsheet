@@ -1,5 +1,7 @@
 # wk2_miniProject
 
+  [![HitCount](https://hits.dwyl.com/mahiv87/wk2_miniProject.svg?style=flat-square)](http://hits.dwyl.com/mahiv87/wk2_miniProject)
+
 ---
 
 ## Description
@@ -15,11 +17,16 @@
 
 ## Link
 
+https://mahiv87.github.io/wk2_miniProject/
 
 ---
 
 ## Mock-up
 
-![My CSS Cheatsheet]()
+![My CSS Cheatsheet @ +992px](./assets/images/CSS_992.png)
+
+![My CSS Cheatsheet @ +768px](./assets/images/CSS_768.png)
+
+![My CSS Cheatsheet @ -768px](./assets/images/CSS_400.png)
 
 ---
