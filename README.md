@@ -1,4 +1,4 @@
-# wk2_miniProject
+# CSS Snippet Cheatsheet
 
   [![HitCount](https://hits.dwyl.com/mahiv87/wk2_miniProject.svg?style=flat-square)](http://hits.dwyl.com/mahiv87/wk2_miniProject)
 
